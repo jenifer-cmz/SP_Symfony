@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}JenAurIma Blog
+			{% endblock %}
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="{{ asset('images/logos/JenAurImaBlog.png') }}">
+		<link rel="stylesheet" href="{{ asset('dist/output.css') }}">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+		{% block javascripts %}
+			{% block importmap %}
+				{{ importmap('app') }}
+			{% endblock %}
+		{% endblock %}
+	</head>
+	<body>
+
+		
+
+		{% include '_partials/header.html.twig' %}
+
+		<main>
+			{% block body %}{% endblock %}
+		</main>
+
+		{% include '_partials/footer.html.twig' %}
+
+	</body>
+</html>

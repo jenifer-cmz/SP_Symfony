@@ -1,0 +1,43 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1; 
+}
+
+.article-content h1{
+font-size: 16px;
+font-weight: bold;
+text-decoration: underline;
+}
+
+.text-xsm{
+    font-size: 10px;
+}
+
+
+.nanum-gothic-coding-regular {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.header-bg {
+    background-color: #FF6347; /* Couleur de fond personnalisée */
+}
